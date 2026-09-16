@@ -1,0 +1,19 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/surface">
+<LinearLayout android:orientation="vertical" android:padding="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:padding="24dp" android:background="@drawable/header_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:text="Monitor WhatsApp" android:textColor="@android:color/white" android:textSize="30sp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:id="@+id/statusText" android:text="Pausado · 0 termos ativos" android:textColor="@android:color/white" android:textSize="16sp" android:layout_marginTop="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:gravity="center_vertical" android:padding="18dp" android:layout_marginTop="18dp" android:background="@drawable/card_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content"><TextView android:text="Monitoramento" android:textSize="20sp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"/><TextView android:id="@+id/monitorLabel" android:text="Desativado" android:textSize="16sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/></LinearLayout>
+        <Switch android:id="@+id/monitorSwitch" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <TextView android:text="A leitura funciona no aplicativo Android instalado no celular. Ative o acesso às notificações nas configurações do sistema." android:textColor="@color/warning_text" android:background="@color/warning_bg" android:padding="16dp" android:layout_marginTop="16dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:text="Palavras e frases" android:textSize="22sp" android:textStyle="bold" android:layout_marginTop="24dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="horizontal" android:layout_marginTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content"><EditText android:id="@+id/termInput" android:hint="Ex.: rota, coleta, palavra..." android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content"/><Button android:id="@+id/addButton" android:text="Adicionar" android:layout_width="wrap_content" android:layout_height="wrap_content"/></LinearLayout>
+    <TextView android:id="@+id/termsText" android:text="Nenhum termo cadastrado." android:textSize="16sp" android:paddingTop="12dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:text="Tempo do alarme (minutos)" android:textSize="20sp" android:textStyle="bold" android:layout_marginTop="24dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <EditText android:id="@+id/minutesInput" android:inputType="number" android:text="2" android:hint="2" android:layout_width="120dp" android:layout_height="wrap_content"/>
+    <Button android:id="@+id/testButton" android:text="Testar alerta agora" android:layout_marginTop="18dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <Button android:id="@+id/accessButton" android:text="Abrir acesso às notificações" android:layout_marginTop="8dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout></ScrollView>
